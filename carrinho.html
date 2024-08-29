@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <!-- Importando Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho fixo com a logo como imagem de fundo -->
+    <header class="bg-image p-5 sticky-top" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 end-0 p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Voltar à Loja</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Carrinho de Compras</h1>
+        
+        <div id="carrinho" class="mb-4">
+            <p class="text-center">Carrinho vazio</p>
+        </div>
+
+        <button class="btn btn-primary" id="finalizar-pedido" onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+    <!-- Importando Bootstrap JS e Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carrinho.js"></script>
+</body>
+</html>

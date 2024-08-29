@@ -1,0 +1,46 @@
+/* Estilos para o corpo principal da página */
+body {
+    padding-top: 150px; /* Espaço equivalente à altura do cabeçalho */
+}
+
+.bg-header {
+    background-image: url('brave.png'); /* Imagem de fundo do cabeçalho */
+    background-size: contain; /* Garante que a imagem toda seja exibida */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem no cabeçalho */
+    height: 150px; /* Altura do cabeçalho */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, background-color 0.5s ease; /* Transição suave */
+}
+
+/* Camada cinza por cima da imagem */
+.bg-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.2); /* Camada cinza com opacidade reduzida */
+    z-index: 1; /* Garante que a camada fique por cima da imagem, mas abaixo do texto */
+}
+
+/* Estilos para o texto */
+.typing-text {
+    font-size: 3rem;
+    color: red; /* Cor do texto vermelho */
+    font-style: italic; /* Texto em itálico */
+    background: z-index;: 2; /* Garante que o texto fique acima da camada cinza */
+}
+
+/* Efeito de opacidade ao rolar para cima */
+.transparent {
+    opacity: 0.5; /* Opacidade reduzida ao rolar para cima */
+}
